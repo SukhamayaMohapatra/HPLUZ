@@ -8,7 +8,6 @@ const LayoutPage = () => {
     <>
       <HeroPage />
       <DashPage />
-      <DocPage />
     </>
   );
 };

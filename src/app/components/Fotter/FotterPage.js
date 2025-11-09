@@ -6,6 +6,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import Link from "next/link";
 import React from "react";
 
 const FotterPage = () => {
@@ -113,26 +114,30 @@ const FotterPage = () => {
             >
               Legal
             </Typography>
-            <Typography
-              sx={{
-                fontSize: "14px",
-                fontWeight: "400",
-                fontFamily: "Rethink Sans",
-                width: "272px",
-              }}
-            >
-              Privacy Policy
-            </Typography>
-            <Typography
-              sx={{
-                fontSize: "14px",
-                fontWeight: "400",
-                fontFamily: "Rethink Sans",
-                width: "272px",
-              }}
-            >
-              Terms of Use
-            </Typography>
+            <Link href={"/components/PrivacyPolicy"}>
+              <Typography
+                sx={{
+                  fontSize: "14px",
+                  fontWeight: "400",
+                  fontFamily: "Rethink Sans",
+                  width: "272px",
+                }}
+              >
+                Privacy Policy
+              </Typography>
+            </Link>
+            <Link href={"/components/Terms"}>
+              <Typography
+                sx={{
+                  fontSize: "14px",
+                  fontWeight: "400",
+                  fontFamily: "Rethink Sans",
+                  width: "272px",
+                }}
+              >
+                Terms of Use
+              </Typography>
+            </Link>
           </Stack>
           <Stack direction={"column"} sx={{ gap: "10px" }}>
             <Typography

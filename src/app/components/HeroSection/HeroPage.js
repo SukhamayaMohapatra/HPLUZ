@@ -1,5 +1,6 @@
 import { Box, Button, CardMedia, Stack, Typography } from "@mui/material";
 import React from "react";
+import PopUp from "../PopUp";
 
 const HeroPage = () => {
   return (
