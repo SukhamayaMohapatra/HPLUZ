@@ -12,12 +12,14 @@ const SubHeader = () => {
     <>
       <AppBar position="fixed" sx={{ bgcolor: "white", boxShadow: "none" }}>
         <Toolbar>
-          <CardMedia
-            component={"image"}
-            image="./images/Logo.png"
-            alt="logo img"
-            sx={{ width: "121px", height: "33px", marginRight: "150px" }}
-          />
+          <Link href={"/"}>
+            <CardMedia
+              component={"image"}
+              image="./images/Logo.png"
+              alt="logo img"
+              sx={{ width: "121px", height: "33px", marginRight: "150px" }}
+            />
+          </Link>
 
           <Stack direction={"row"} sx={{ gap: "30px", flexGrow: 1 }}>
             <Typography

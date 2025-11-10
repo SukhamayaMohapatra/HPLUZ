@@ -27,7 +27,7 @@ const DocPage = () => {
       <Typography
         sx={{
           marginTop: "100px",
-          marginLeft: "40px",
+          marginLeft: "70px",
           fontFamily: "Rethink Sans",
           fontSize: "40px",
           fontWeight: "600",
@@ -38,7 +38,7 @@ const DocPage = () => {
       </Typography>
       <Typography
         sx={{
-          marginLeft: "40px",
+          marginLeft: "70px",
           fontFamily: "Rethink Sans",
           fontSize: "14px",
           fontWeight: "400",
@@ -48,7 +48,7 @@ const DocPage = () => {
         Connect with specialists, view profiles, and schedule consultations
         instantly anytime, anywhere from the mobile app.
       </Typography>
-      <Stack direction={"row"} sx={{ marginLeft: "40px", marginTop: "50px" }}>
+      <Stack direction={"row"} sx={{ marginLeft: "70px", marginTop: "50px" }}>
         <TextField
           slotProps={{
             input: {
@@ -77,6 +77,7 @@ const DocPage = () => {
         />
         <FormControl sx={{ marginLeft: "700px" }}>
           <InputLabel
+            shrink={false}
             id="my-select-label"
             sx={{
               marginTop: "-2px",
@@ -84,6 +85,9 @@ const DocPage = () => {
               fontWeight: "600",
               fontFamily: "Rethink Sans",
               color: "#333333",
+              "&.Mui-focused": {
+                color: "#333333", // Keep the same color when focused
+              },
             }}
           >
             City
@@ -121,6 +125,7 @@ const DocPage = () => {
         </FormControl>
         <FormControl sx={{ marginLeft: "50px" }}>
           <InputLabel
+            shrink={false}
             id="my-select-label"
             sx={{
               marginTop: "-2px",
@@ -128,6 +133,9 @@ const DocPage = () => {
               fontWeight: "600",
               fontFamily: "Rethink Sans",
               color: "#333333",
+              "&.Mui-focused": {
+                color: "#333333", // Keep the same color when focused
+              },
             }}
           >
             Speciality
@@ -287,6 +295,7 @@ const DocPage = () => {
         </FormControl>
         <FormControl sx={{ marginLeft: "50px" }}>
           <InputLabel
+            shrink={false}
             id="my-select-label"
             sx={{
               marginTop: "-2px",
@@ -294,6 +303,9 @@ const DocPage = () => {
               fontWeight: "600",
               fontFamily: "Rethink Sans",
               color: "#333333",
+              "&.Mui-focused": {
+                color: "#333333", // Keep the same color when focused
+              },
             }}
           >
             Experience
@@ -330,6 +342,7 @@ const DocPage = () => {
         </FormControl>
         <FormControl sx={{ marginLeft: "50px" }}>
           <InputLabel
+            shrink={false}
             id="my-select-label"
             sx={{
               marginTop: "-2px",
@@ -337,6 +350,9 @@ const DocPage = () => {
               fontWeight: "600",
               fontFamily: "Rethink Sans",
               color: "#333333",
+              "&.Mui-focused": {
+                color: "#333333", // Keep the same color when focused
+              },
             }}
           >
             Ratings
