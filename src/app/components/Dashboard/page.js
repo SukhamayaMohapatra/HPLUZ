@@ -157,7 +157,12 @@ const DashPage = () => {
           marginTop: "50px",
         }}
       >
-        <Image src="/images/DashboardBG.png" width={1280} height={646} />
+        <Image
+          src="/images/DashboardBG.png"
+          alt="..."
+          width={1280}
+          height={646}
+        />
       </Box>
       <Stack
         direction={"column"}
