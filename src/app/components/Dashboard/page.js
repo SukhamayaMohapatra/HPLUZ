@@ -1,5 +1,6 @@
 import { Box, Button, CardMedia, Stack, Typography } from "@mui/material";
 import React from "react";
+import Image from "next/image";
 
 const DashPage = () => {
   return (
@@ -72,39 +73,23 @@ const DashPage = () => {
             alignItems: "center",
           }}
         >
-          <CardMedia
-            image="./images/Services1.png"
-            sx={{ width: "352px", height: "256px" }}
+          <Image
+            src="/images/Services1.png"
+            alt="..."
+            width={352}
+            height={256}
           />
-          <CardMedia
-            image="./images/Services2.png"
-            sx={{ width: "352px", height: "256px" }}
+          <Image
+            src="/images/Services2.png"
+            alt="..."
+            width={352}
+            height={256}
           />
-          <CardMedia
-            image="./images/Services3.png"
-            sx={{ width: "352px", height: "256px" }}
-          />
-        </Stack>
-        <Stack
-          direction={"row"}
-          sx={{
-            gap: "10px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <CardMedia
-            image="./images/Services4.png"
-            sx={{ width: "352px", height: "256px" }}
-          />
-          <CardMedia
-            image="./images/Services5.png"
-            sx={{ width: "352px", height: "256px" }}
-          />
-          <CardMedia
-            image="./images/Services6.png"
-            sx={{ width: "352px", height: "256px" }}
+          <Image
+            src="/images/Services3.png"
+            alt="..."
+            width={352}
+            height={256}
           />
         </Stack>
         <Stack
@@ -116,17 +101,51 @@ const DashPage = () => {
             alignItems: "center",
           }}
         >
-          <CardMedia
-            image="./images/Services7.png"
-            sx={{ width: "352px", height: "256px" }}
+          <Image
+            src="/images/Services4.png"
+            alt="..."
+            width={352}
+            height={256}
           />
-          <CardMedia
-            image="./images/Services8.png"
-            sx={{ width: "352px", height: "256px" }}
+          <Image
+            src="/images/Services5.png"
+            alt="..."
+            width={352}
+            height={256}
           />
-          <CardMedia
-            image="./images/Services9.png"
-            sx={{ width: "352px", height: "256px" }}
+          <Image
+            src="/images/Services6.png"
+            alt="..."
+            width={352}
+            height={256}
+          />
+        </Stack>
+        <Stack
+          direction={"row"}
+          sx={{
+            gap: "10px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            src="/images/Services7.png"
+            alt="..."
+            width={352}
+            height={256}
+          />
+          <Image
+            src="/images/Services8.png"
+            alt="..."
+            width={352}
+            height={256}
+          />
+          <Image
+            src="/images/Services9.png"
+            alt="..."
+            width={352}
+            height={256}
           />
         </Stack>
       </Stack>
@@ -138,10 +157,7 @@ const DashPage = () => {
           marginTop: "50px",
         }}
       >
-        <CardMedia
-          image="./images/DashboardBG.png"
-          sx={{ width: "1280px", height: "646px" }}
-        />
+        <Image src="/images/DashboardBG.png" width={1280} height={646} />
       </Box>
       <Stack
         direction={"column"}
@@ -209,18 +225,9 @@ const DashPage = () => {
           marginTop: "60px",
         }}
       >
-        <CardMedia
-          image="./images/About1.png"
-          sx={{ width: "352px", height: "600px" }}
-        />
-        <CardMedia
-          image="./images/About3.png"
-          sx={{ width: "352px", height: "600px" }}
-        />
-        <CardMedia
-          image="./images/About2.png"
-          sx={{ width: "352px", height: "600px" }}
-        />
+        <Image src="/images/About1.png" alt="..." width={352} height={600} />
+        <Image src="/images/About3.png" alt="..." width={352} height={600} />
+        <Image src="/images/About2.png" alt="..." width={352} height={600} />
       </Stack>
       <Stack
         direction={"column"}
@@ -246,14 +253,12 @@ const DashPage = () => {
         >
           Download App
         </Button>
-        <CardMedia
-          image="./images/About4.png"
-          sx={{
-            width: "90%",
-            height: "482px",
-            backgroundSize: "contain",
-            marginTop: "50px",
-          }}
+        <Image
+          src="/images/About4.png"
+          alt="..."
+          width={"1480"}
+          height={582}
+          style={{ backgroundSize: "contain", marginTop: "50px" }}
         />
       </Stack>
     </>

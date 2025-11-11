@@ -1,6 +1,7 @@
 import { Box, Button, CardMedia, Stack, Typography } from "@mui/material";
 import React from "react";
 import PopUp from "../PopUp";
+import Image from "next/image";
 
 const HeroPage = () => {
   return (
@@ -72,29 +73,28 @@ const HeroPage = () => {
             }}
           >
             <Stack direction={"row"} sx={{ gap: "5px" }}>
-              <CardMedia
-                component={"image"}
-                image="./images/App Store.png"
+              <Image
+                src="/images/App Store.png"
                 alt="..."
-                sx={{ width: "152px", height: "44px" }}
+                width={152}
+                height={44}
               />
-              <CardMedia
-                component={"image"}
-                image="./images/Google Play.png"
+              <Image
+                src="/images/Google Play.png"
                 alt="..."
-                sx={{ width: "152px", height: "44px" }}
+                width={152}
+                height={44}
               />
             </Stack>
           </Box>
           <Stack
             direction={"column"}
             sx={{
-              marginTop: "30px",
+              marginTop: "20px",
               textAlign: "center",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              gap: "10px",
             }}
           >
             <Typography
@@ -103,13 +103,17 @@ const HeroPage = () => {
                 fontSize: "14px",
                 color: "#078CDF",
                 fontWeight: "500",
+                marginBottom: "12px",
               }}
             >
               Scroll to know more
             </Typography>
-            <img
-              src={"./images/double_arrow.png"}
-              style={{ width: "10px", height: "10px" }}
+            <Image
+              width={10}
+              height={10}
+              src={"/images/double_arrow.png"}
+              alt="..."
+              style={{ marginBottom: "10px" }}
             />
           </Stack>
           <Box
@@ -120,16 +124,15 @@ const HeroPage = () => {
               alignItems: "center",
             }}
           >
-            <Stack direction={"row"}>
+            <Stack direction={"row"} sx={{ marginTop: "-40px" }}>
               <Box>
-                <CardMedia
-                  component={"image"}
-                  image="./images/Group 14.png"
-                  alt="group img"
-                  sx={{
-                    marginTop: "15px",
-                    width: "300px",
-                    height: "382px",
+                <Image
+                  src="/images/Group 14.png"
+                  alt="..."
+                  width={300}
+                  height={342}
+                  style={{
+                    marginTop: "40px",
                     backgroundSize: "contain",
                     marginRight: "-60px",
                   }}
@@ -142,13 +145,12 @@ const HeroPage = () => {
                   alignItems: "flex-start",
                 }}
               >
-                <CardMedia
-                  component={"image"}
-                  image="./images/Group 13.png"
-                  alt="group img"
-                  sx={{
-                    width: "300px",
-                    height: "362px",
+                <Image
+                  src="/images/Group 13.png"
+                  alt="..."
+                  width={300}
+                  height={400}
+                  style={{
                     backgroundSize: "contain",
                     zIndex: "99",
                   }}
@@ -161,13 +163,13 @@ const HeroPage = () => {
                   alignItems: "flex-end",
                 }}
               >
-                <CardMedia
-                  component={"image"}
-                  image="./images/Group 15.png"
-                  alt="group img"
-                  sx={{
-                    width: "300px",
-                    height: "382px",
+                <Image
+                  src="/images/Group 14.png"
+                  alt="..."
+                  width={300}
+                  height={355}
+                  style={{
+                    marginTop: "40px",
                     backgroundSize: "contain",
                     marginLeft: "-60px",
                   }}

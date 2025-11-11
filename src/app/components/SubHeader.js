@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { CardMedia, Stack } from "@mui/material";
 import Link from "next/link";
+import Image from "next/image";
 
 const SubHeader = () => {
   return (
@@ -13,11 +14,12 @@ const SubHeader = () => {
       <AppBar position="fixed" sx={{ bgcolor: "white", boxShadow: "none" }}>
         <Toolbar>
           <Link href={"/"}>
-            <CardMedia
-              component={"image"}
-              image="./images/Logo.png"
+            <Image
+              src="/images/Logo.png"
               alt="logo img"
-              sx={{ width: "121px", height: "33px", marginRight: "150px" }}
+              width={121}
+              height={33}
+              style={{ marginLeft: "30px", marginRight: "20px" }}
             />
           </Link>
 
@@ -42,7 +44,7 @@ const SubHeader = () => {
             >
               Why HPLUZ
             </Typography>
-            <Link href={"components/Dashboard"}>
+            <Link href={"Dashboard"}>
               <Typography
                 sx={{
                   color: "black",

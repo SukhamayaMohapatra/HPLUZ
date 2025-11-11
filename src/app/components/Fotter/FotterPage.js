@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const FotterPage = () => {
   return (
@@ -33,12 +34,7 @@ const FotterPage = () => {
           sx={{ gap: "20px", marginTop: "100px", marginLeft: "100px" }}
         >
           <Stack direction={"column"} sx={{ gap: "10px" }}>
-            <CardMedia
-              component={"image"}
-              image="./images/Logo.png"
-              alt="logo img"
-              sx={{ width: "121px", height: "33px" }}
-            />
+            <Image src={"/images/Logo.png"} alt="..." width={121} height={33} />
             <Typography
               sx={{
                 fontSize: "14px",
@@ -151,14 +147,11 @@ const FotterPage = () => {
               Contact Us
             </Typography>
             <Stack direction={"row"} sx={{ gap: "10px" }}>
-              <img
-                src={"./images/location.png"}
+              <Image
+                src={"/images/location.png"}
                 alt="..."
-                style={{
-                  width: "16px",
-                  height: "16px",
-                  marginTop: "2px",
-                }}
+                width={16}
+                height={16}
               />
               <Typography
                 sx={{
@@ -173,14 +166,11 @@ const FotterPage = () => {
             </Stack>
 
             <Stack direction={"row"} sx={{ gap: "10px" }}>
-              <img
-                src={"./images/call.png"}
+              <Image
+                src={"/images/call.png"}
                 alt="..."
-                style={{
-                  width: "16px",
-                  height: "16px",
-                  marginTop: "2px",
-                }}
+                width={16}
+                height={16}
               />
               <Typography
                 sx={{
@@ -194,15 +184,7 @@ const FotterPage = () => {
             </Stack>
 
             <Stack direction={"row"} sx={{ gap: "10px" }}>
-              <img
-                src={"./images/sms.png"}
-                alt="..."
-                style={{
-                  width: "16px",
-                  height: "16px",
-                  marginTop: "2px",
-                }}
-              />
+              <Image src={"/images/sms.png"} alt="..." width={16} height={16} />
               <Typography
                 sx={{
                   fontSize: "14px",
@@ -225,17 +207,17 @@ const FotterPage = () => {
             >
               Download the app
             </Typography>
-            <CardMedia
-              component={"image"}
-              image="./images/App Store.png"
-              alt="logo img"
-              sx={{ width: "152px", height: "44px" }}
+            <Image
+              src={"/images/App Store.png"}
+              alt="..."
+              width={152}
+              height={44}
             />
-            <CardMedia
-              component={"image"}
-              image="./images/Google Play.png"
-              alt="logo img"
-              sx={{ width: "152px", height: "44px" }}
+            <Image
+              src={"/images/Google Play.png"}
+              alt="..."
+              width={152}
+              height={44}
             />
           </Stack>
         </Stack>
@@ -274,26 +256,25 @@ const FotterPage = () => {
           >
             Follow Us On
           </Typography>
-          <img
-            src={"./images/Facebook.png"}
+          <Image
+            src={"/images/Facebook.png"}
             alt="..."
-            style={{ width: "16px", height: "16px" }}
+            width={16}
+            height={16}
           />
-          <img
-            src={"./images/Instagram.png"}
+          <Image
+            src={"/images/Instagram.png"}
             alt="..."
-            style={{ width: "16px", height: "16px" }}
+            width={16}
+            height={16}
           />
-          <img
-            src={"./images/Linkedin.png"}
+          <Image
+            src={"/images/Linkedin.png"}
             alt="..."
-            style={{ width: "16px", height: "16px" }}
+            width={16}
+            height={16}
           />
-          <img
-            src={"./images/Twitter.png"}
-            alt="..."
-            style={{ width: "16px", height: "16px" }}
-          />
+          <Image src={"/images/Twitter.png"} alt="..." width={16} height={16} />
         </Stack>
       </Stack>
     </Box>

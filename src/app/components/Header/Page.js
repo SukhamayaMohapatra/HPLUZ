@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { CardMedia, Stack } from "@mui/material";
 import Link from "next/link";
+import Image from "next/image";
 
 const Page = () => {
   return (
@@ -13,11 +14,12 @@ const Page = () => {
       <Box sx={{}}>
         <AppBar position="fixed" sx={{ bgcolor: "white", boxShadow: "none" }}>
           <Toolbar>
-            <CardMedia
-              component={"image"}
-              image="./images/Logo.png"
+            <Image
+              src="/images/Logo.png"
               alt="logo img"
-              sx={{ width: "121px", height: "33px", marginRight: "150px" }}
+              width={121}
+              height={33}
+              style={{ marginLeft: "30px", marginRight: "20px" }}
             />
 
             <Stack direction={"row"} sx={{ gap: "30px", flexGrow: 1 }}>
