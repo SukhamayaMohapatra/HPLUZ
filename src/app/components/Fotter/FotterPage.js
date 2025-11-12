@@ -1,6 +1,7 @@
 import {
   AppBar,
   Box,
+  Button,
   CardMedia,
   Divider,
   Stack,
@@ -207,18 +208,100 @@ const FotterPage = () => {
             >
               Download the app
             </Typography>
-            <Image
-              src={"/images/App Store.png"}
-              alt="..."
-              width={152}
-              height={44}
-            />
-            <Image
-              src={"/images/Google Play.png"}
-              alt="..."
-              width={152}
-              height={44}
-            />
+
+            <Button
+              variant="outlined"
+              sx={{
+                color: "#000000",
+                borderRadius: "8px",
+                width: "152px",
+                height: "44px",
+                border: "1px solid #000000",
+              }}
+            >
+              <Stack direction={"row"} sx={{ gap: "10px" }}>
+                <Image
+                  src={"/images/Apple1.png"}
+                  alt="..."
+                  width={23}
+                  height={28}
+                  style={{
+                    backgroundSize: "contain",
+                    marginLeft: "-10px",
+                  }}
+                />
+                <Stack direction={"column"} sx={{ textAlign: "left" }}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Rethink Sans",
+                      fontSize: "10px",
+                      fontWeight: "400",
+                      textTransform: "none",
+                      marginTop: "-2px",
+                    }}
+                  >
+                    Download on the
+                  </Typography>
+                  <Typography
+                    sx={{
+                      marginTop: "-5px",
+                      fontFamily: "Rethink Sans",
+                      fontSize: "16px",
+                      fontWeight: "600",
+                      textTransform: "none",
+                    }}
+                  >
+                    App Store
+                  </Typography>
+                </Stack>
+              </Stack>
+            </Button>
+            <Button
+              variant="outlined"
+              sx={{
+                color: "#000000",
+                borderRadius: "8px",
+                width: "152px",
+                height: "44px",
+                border: "1px solid #000000",
+              }}
+            >
+              <Stack direction={"row"} sx={{ gap: "5px" }}>
+                <Image
+                  src={"/images/Play.png"}
+                  alt="..."
+                  width={28}
+                  height={30}
+                  style={{
+                    backgroundSize: "contain",
+                    marginTop: "3px",
+                    marginLeft: "-5px",
+                  }}
+                />
+                <Stack direction={"column"} sx={{ textAlign: "left" }}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Rethink Sans",
+                      fontSize: "12px",
+                      fontWeight: "500",
+                    }}
+                  >
+                    Get it on
+                  </Typography>
+                  <Typography
+                    sx={{
+                      marginTop: "-5px",
+                      fontFamily: "Rethink Sans",
+                      fontSize: "16px",
+                      fontWeight: "600",
+                      textTransform: "none",
+                    }}
+                  >
+                    Google Play
+                  </Typography>
+                </Stack>
+              </Stack>
+            </Button>
           </Stack>
         </Stack>
         <Divider sx={{ marginTop: "30px", width: "90%", bgcolor: "#D9D9D9" }} />
