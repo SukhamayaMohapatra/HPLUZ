@@ -14,8 +14,8 @@ const CardPage = () => {
         marginTop: "100px",
       }}
     >
-      <Stack direction={"column"} sx={{ gap: "40px" }}>
-        <Stack direction={"row"} sx={{ gap: "20px" }}>
+      <Stack direction={"column"} sx={{ gap: "24px" }}>
+        <Stack direction={"row"} sx={{ gap: "16px" }}>
           <Box
             sx={{
               width: "370px",

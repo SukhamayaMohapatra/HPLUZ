@@ -12,6 +12,20 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
+import { styled } from "@mui/material/styles";
+
+const StyledIconButton = styled(IconButton)(({ theme }) => ({
+  "&:hover": {
+    backgroundColor: "transparent",
+  },
+  "&.MuiButtonBase-root": {
+    "&.MuiIconButton-root": {
+      "&.MuiButtonBase-root": {
+        disableRipple: true,
+      },
+    },
+  },
+}));
 
 const PopUp = () => {
   const [open, setOpen] = useState(true); // Start as open
@@ -57,13 +71,13 @@ const PopUp = () => {
             >
               Download the HPluz App & Get Started Instantly
             </Typography>
-            <IconButton
+            <StyledIconButton
               aria-label="close"
               onClick={handleClose}
               sx={{ marginTop: "-80px" }}
             >
               <CloseIcon sx={{ color: "#2E2E2E" }} />
-            </IconButton>
+            </StyledIconButton>
           </Stack>
         </DialogTitle>
         <DialogContent>
