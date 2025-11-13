@@ -14,14 +14,15 @@ const Page = () => {
       <Box sx={{}}>
         <AppBar position="fixed" sx={{ bgcolor: "white", boxShadow: "none" }}>
           <Toolbar>
-            <Image
-              src="/images/Logo.png"
-              alt="logo img"
-              width={121}
-              height={33}
-              style={{ marginLeft: "30px", marginRight: "20px" }}
-            />
-
+            <Link href={"/"}>
+              <Image
+                src="/images/Logo.png"
+                alt="logo img"
+                width={121}
+                height={33}
+                style={{ marginLeft: "30px", marginRight: "20px" }}
+              />
+            </Link>
             <Stack direction={"row"} sx={{ gap: "30px", flexGrow: 1 }}>
               <Typography
                 sx={{
@@ -43,7 +44,7 @@ const Page = () => {
               >
                 Why HPLUZ
               </Typography>
-              <Link href={"components/Dashboard"}>
+              <Link href={"/components/dash-layout"}>
                 <Typography
                   sx={{
                     color: "black",
@@ -56,7 +57,7 @@ const Page = () => {
                 </Typography>
               </Link>
             </Stack>
-            <Link href={"/components/DoctorDIrectory"}>
+            <Link href={"/components/doctor-directory"}>
               <Button
                 variant="outlined"
                 sx={{

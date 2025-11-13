@@ -44,7 +44,7 @@ const SubHeader = () => {
             >
               Why HPLUZ
             </Typography>
-            <Link href={"Dashboard"}>
+            <Link href={"/components/dash-layout"}>
               <Typography
                 sx={{
                   color: "black",

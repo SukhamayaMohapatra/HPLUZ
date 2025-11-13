@@ -52,7 +52,7 @@ const FotterPage = () => {
             <Typography
               sx={{
                 fontSize: "16px",
-                fontWeight: "600",
+                fontWeight: "500",
                 fontFamily: "Rethink Sans",
                 width: "272px",
               }}
@@ -104,7 +104,7 @@ const FotterPage = () => {
             <Typography
               sx={{
                 fontSize: "16px",
-                fontWeight: "600",
+                fontWeight: "500",
                 fontFamily: "Rethink Sans",
                 width: "272px",
               }}
@@ -140,7 +140,7 @@ const FotterPage = () => {
             <Typography
               sx={{
                 fontSize: "16px",
-                fontWeight: "600",
+                fontWeight: "500",
                 fontFamily: "Rethink Sans",
                 width: "272px",
               }}
@@ -201,7 +201,7 @@ const FotterPage = () => {
             <Typography
               sx={{
                 fontSize: "16px",
-                fontWeight: "600",
+                fontWeight: "500",
                 fontFamily: "Rethink Sans",
                 width: "272px",
               }}

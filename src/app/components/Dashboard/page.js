@@ -7,7 +7,12 @@ const DashPage = () => {
     <>
       <Stack
         direction={"column"}
-        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "50px",
+        }}
       >
         <Box
           sx={{
@@ -15,8 +20,7 @@ const DashPage = () => {
             width: "124px",
             height: "28px",
             borderRadius: "8px",
-            border: "1px solid #078CDF",
-            bgcolor: "#d6ecf9ff",
+            bgcolor: "#078CDF14",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
