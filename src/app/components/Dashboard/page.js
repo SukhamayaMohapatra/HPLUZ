@@ -1,6 +1,8 @@
 import { Box, Button, CardMedia, Stack, Typography } from "@mui/material";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const DashPage = () => {
   return (
@@ -262,13 +264,108 @@ const DashPage = () => {
         >
           Download App
         </Button>
-        <Image
-          src="/images/About4.png"
-          alt="..."
-          width={"1480"}
-          height={582}
-          style={{ backgroundSize: "contain", marginTop: "50px" }}
-        />
+
+        <Box
+          sx={{
+            marginTop: "50px",
+            bgcolor: "#3183FF",
+            width: "1280px",
+            height: "482px",
+            borderRadius: "30px",
+            padding: "60px",
+          }}
+        >
+          <Stack direction={"row"} sx={{ gap: "40px" }}>
+            <Stack
+              direction={"column"}
+              sx={{ gap: "12px", marginLeft: "30px" }}
+            >
+              <Typography
+                sx={{
+                  width: "114px",
+                  height: "28px",
+                  bgcolor: "#FFFFFF29",
+                  borderRadius: "8px",
+                  padding: "4px 8px 4px 8px",
+                  color: "#FFFFFF",
+                  fontSize: "12px",
+                  fontFamily: "Rethink Sans",
+                  fontWeight: "600",
+                  textAlign: "center",
+                  alignItems: "center",
+                }}
+              >
+                Meet Our Doctors
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: "40px",
+                  fontWeight: "600",
+                  fontFamily: "Rethink Sans",
+                  color: "#FFFFFF",
+                }}
+              >
+                Connect with Trusted & <br /> Experienced Healthcare
+                <br />
+                Professionals.
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: "14px",
+                  fontWeight: "400",
+                  fontFamily: "Rethink Sans",
+                  color: "#FFFFFF",
+                }}
+              >
+                Browse our doctor directory to explore profiles and check
+                experience.
+              </Typography>
+              <Link href={"/components/doctor-directory"}>
+                <Button
+                  sx={{
+                    marginTop: "40px",
+                    width: "158px",
+                    height: "40px",
+                    bgcolor: "#FFFFFF",
+                    color: "#078CDF",
+                    textTransform: "none",
+                    borderRadius: "99px",
+                  }}
+                >
+                  View All Doctors
+                  <ArrowForwardIcon
+                    sx={{
+                      color: "#078CDF",
+                      width: "16px",
+                      height: "16px",
+                      marginLeft: "5px",
+                    }}
+                  />
+                </Button>
+              </Link>
+            </Stack>
+            <Box sx={{ left: "202px", position: "relative" }}>
+              <Image
+                width={527}
+                height={352}
+                src={"/images/Doctor.png"}
+                alt="..."
+                objectFit="cover"
+              />
+              <Box
+                sx={{
+                  position: "absolute",
+                  bottom: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "30%",
+                  background:
+                    "linear-gradient( rgba(49,131,255,0) , rgba(49,131,255,1))",
+                }}
+              />
+            </Box>
+          </Stack>
+        </Box>
       </Stack>
     </>
   );
